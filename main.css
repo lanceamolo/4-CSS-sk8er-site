@@ -1,0 +1,79 @@
+/*
+
+selector {
+background-img: url(assets/); 
+}
+
+background size matters
+cover
+
+background position 0% 0% ( X , Y )
+
+opacity: visibility between 1 and 0.0
+
+background-repeat: no-repeat;
+
+*/
+
+body {
+  width: 2000px;
+  height: 2256px;
+  display: grid;
+  grid-template-columns: 24% auto 24%;
+  grid-template-rows: 1fr;
+}
+
+.container {
+  display: grid;
+  grid-column-start: 2;
+  height: 100%;
+  background: lightgrey;
+}
+
+.grid1 {
+  border: 1px solid red;
+  height: 78px;
+}
+
+.grid2 {
+  border: 1px solid red;
+  height: 39px;
+  margin-top: -320px;
+  padding-bottom: 15px;
+}
+
+.flex2 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+h4 {
+  display: flex;
+  border: 1px solid green;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.grid3 {
+  border: 1px solid red;
+}
+
+.grid4 {
+  border: 1px solid red;
+}
+
+.grid5 {
+  border: 1px solid red;
+}
+
+.grid6 {
+  border: 1px solid red;
+}
+
+.grid7 {
+  border: 1px solid red;
+}
+
+.grid8 {
+  border: 1px solid red;
+}
