@@ -29,8 +29,8 @@ body {
   display: grid;
   grid-column-start: 2;
   height: 100%;
-  gap: 15px 10px;
-  grid-template-rows: 70px 40px 360px 60px 355px 475px 300px 365px;
+  gap: 20px 10px;
+  grid-template-rows: 70px 40px 360px 20px 350px 475px 300px 365px;
 }
 
 .grid1 {
@@ -78,7 +78,6 @@ body {
 }
 
 .grid4 {
-  border: 1px solid red;
   display: grid;
   grid-row: 4;
   grid-template-columns: 1fr 1fr 1fr;
@@ -86,32 +85,29 @@ body {
 
 .radio3 {
   grid-column-start: 2;
-  margin-left: 40%;
+  place-self: center;
+}
+
+input[type="radio"] {
+  height: 16px;
+  width: 16px;
 }
 
 .grid5 {
-  border: 1px solid red;
   grid-row: 5;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10px;
 }
 
 .card {
-  border: 1px solid red;
   display: grid;
-  grid-template-rows: 80% 20%;
   background: white;
+  padding: 15px;
 }
 
-.topEnd {
-  border: 1px solid purple;
-  grid-row-start: 1;
-  grid-row-end: 2;
-}
-
-.bottomEnd {
-  border: 1px solid green;
-  grid-row-start: 2;
+h3 {
+  margin-bottom: 20px;
 }
 
 .grid6 {
@@ -119,75 +115,58 @@ body {
   display: grid;
   grid-row: 6;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
+  grid-template-rows: 1fr 1fr;
   grid-template-areas:
     "header main sidebar"
     "footer footer sidebar";
+  gap: 20px 10px;
 }
 
 header,
 main,
 aside,
 footer {
-  min-height: 100px;
+  min-height: 100%;
+  border: 5px solid white;
 }
 
 header {
   grid-area: header;
+  color: white;
   background-image: url("assets/sk8er-4.png");
+  background-position-x: 95%;
 }
 
 main {
   grid-area: main;
+  color: white;
   background-image: url("assets/sk8er-3.png");
 }
 
 aside {
   grid-area: sidebar;
+  color: white;
   background-image: url("assets/sk8er-2.png");
+  background-position-x: 78%;
 }
 
 footer {
   grid-area: footer;
+  color: white;
   background-image: url("assets/sk8er-1.png");
+  background-size: 700px 360px;
+  background-position: 0% 75%;
 }
 
 .grid7 {
-  border: 1px solid red;
   display: grid;
   grid-row: 7;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   background: white;
 }
 
-.b1 {
-}
-
-.b2 {
-}
-
-.b3 {
-}
-
-.b4 {
-}
-
-.b5 {
-}
-
-.b6 {
-}
-
-.b7 {
-}
-
-.b8 {
-}
-
-.b9 {
-}
-
-.b10 {
+.grid7 img {
+  place-self: center;
 }
 
 .grid8 {
@@ -199,8 +178,9 @@ footer {
 }
 
 .contact1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
 }
-grid-column-end: 2;
 
 .contact2 {
   display: grid;
