@@ -19,8 +19,9 @@ body {
   width: 2000px;
   height: 2256px;
   display: grid;
-  grid-template-columns: 24% auto 24%;
+  grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 1fr;
+  margin-top: 2px;
 }
 
 .container {
@@ -37,9 +38,8 @@ body {
 
 .grid2 {
   border: 1px solid red;
-  height: 39px;
-  margin-top: -320px;
-  padding-bottom: 15px;
+  height: 45px;
+  margin-top: -280px;
 }
 
 .flex2 {
@@ -56,14 +56,35 @@ h4 {
 
 .grid3 {
   border: 1px solid red;
+  margin-top: -480px;
 }
 
 .grid4 {
   border: 1px solid red;
+  justify-content: center;
 }
 
 .grid5 {
   border: 1px solid red;
+}
+
+.flex5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+  border: 1px solid red;
+}
+
+.topEnd {
+  border: 1px solid purple;
+}
+
+.bottomEnd {
+  border: 1px solid green;
+  display: flex;
+  justify-content: center;
 }
 
 .grid6 {
