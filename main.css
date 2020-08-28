@@ -1,7 +1,7 @@
 /*
 
 selector {
-background-img: url(assets/); 
+background-image: url("assets/"); 
 }
 
 background size matters
@@ -22,79 +22,187 @@ body {
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 1fr;
   margin-top: 2px;
+  background-image: url("assets/bg.jpg");
 }
 
 .container {
   display: grid;
   grid-column-start: 2;
   height: 100%;
-  background: lightgrey;
+  gap: 15px 10px;
+  grid-template-rows: 70px 40px 360px 60px 355px 475px 300px 365px;
 }
 
 .grid1 {
   border: 1px solid red;
+  display: grid;
+  grid-row: 1;
   height: 78px;
+  display: grid;
+  grid-template-columns: 500px 500px;
+}
+
+.flex1 {
+  grid-column-start: 2;
 }
 
 .grid2 {
   border: 1px solid red;
-  height: 45px;
-  margin-top: -280px;
+  display: grid;
+  grid-row: 2;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.flex2 {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-h4 {
+.grid2 p {
   display: flex;
   border: 1px solid green;
   flex-grow: 1;
   justify-content: center;
+  background: red;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .grid3 {
-  border: 1px solid red;
-  margin-top: -480px;
+  border: 10px solid white;
+  display: grid;
+  grid-row: 3;
+  background-image: url("assets/top-image.png");
+  background-position: 31% 25%;
+}
+
+.peralta {
+  position: relative;
+  top: 55px;
+  left: 15px;
 }
 
 .grid4 {
   border: 1px solid red;
-  justify-content: center;
+  display: grid;
+  grid-row: 4;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.radio3 {
+  grid-column-start: 2;
+  margin-left: 40%;
 }
 
 .grid5 {
   border: 1px solid red;
-}
-
-.flex5 {
+  grid-row: 5;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
 .card {
   border: 1px solid red;
+  display: grid;
+  grid-template-rows: 80% 20%;
+  background: white;
 }
 
 .topEnd {
   border: 1px solid purple;
+  grid-row-start: 1;
+  grid-row-end: 2;
 }
 
 .bottomEnd {
   border: 1px solid green;
-  display: flex;
-  justify-content: center;
+  grid-row-start: 2;
 }
 
 .grid6 {
   border: 1px solid red;
+  display: grid;
+  grid-row: 6;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header main sidebar"
+    "footer footer sidebar";
+}
+
+header,
+main,
+aside,
+footer {
+  min-height: 100px;
+}
+
+header {
+  grid-area: header;
+  background-image: url("assets/sk8er-4.png");
+}
+
+main {
+  grid-area: main;
+  background-image: url("assets/sk8er-3.png");
+}
+
+aside {
+  grid-area: sidebar;
+  background-image: url("assets/sk8er-2.png");
+}
+
+footer {
+  grid-area: footer;
+  background-image: url("assets/sk8er-1.png");
 }
 
 .grid7 {
   border: 1px solid red;
+  display: grid;
+  grid-row: 7;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  background: white;
+}
+
+.b1 {
+}
+
+.b2 {
+}
+
+.b3 {
+}
+
+.b4 {
+}
+
+.b5 {
+}
+
+.b6 {
+}
+
+.b7 {
+}
+
+.b8 {
+}
+
+.b9 {
+}
+
+.b10 {
 }
 
 .grid8 {
   border: 1px solid red;
+  display: grid;
+  grid-row: 8;
+  grid-template-columns: 55% 45%;
+  background: white;
+}
+
+.contact1 {
+}
+grid-column-end: 2;
+
+.contact2 {
+  display: grid;
+  grid-column-start: 2;
 }
