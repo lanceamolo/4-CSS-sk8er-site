@@ -34,7 +34,6 @@ body {
 }
 
 .grid1 {
-  border: 1px solid red;
   display: grid;
   grid-row: 1;
   height: 78px;
@@ -47,7 +46,6 @@ body {
 }
 
 .grid2 {
-  border: 1px solid red;
   display: grid;
   grid-row: 2;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -86,20 +84,22 @@ body {
   grid-column: 2;
 }
 .redDot {
-  height: 11px;
-  width: 11px;
-  background-color: #983d38;
+  height: 7px;
+  width: 7px;
+  background-color: #a73634;
   border-radius: 50%;
   margin: 5px;
   align-self: center;
-  border: solid 1px white;
+  border: solid 4px white;
 }
 .dot {
-  height: 12px;
-  width: 12px;
+  height: 7px;
+  width: 7px;
+  background-color: white;
   border-radius: 50%;
   margin: 5px;
-  background-color: white;
+  align-self: center;
+  border: solid 4px white;
 }
 
 input[type="radio"] {
@@ -131,11 +131,10 @@ input[type="radio"] {
 .grid5 a {
   text-decoration: none;
   text-align: center;
-  color: #983d38;
+  color: #a73634;
 }
 
 .grid6 {
-  border: 1px solid red;
   display: grid;
   grid-row: 6;
   grid-template-columns: 1fr 1fr 1fr;
@@ -210,7 +209,6 @@ footer {
 }
 
 .grid8 {
-  border: 1px solid red;
   display: grid;
   grid-row: 8;
   grid-template-columns: 55% 45%;
@@ -227,4 +225,24 @@ footer {
 .contact2 {
   display: grid;
   grid-column-start: 2;
+  grid-template-rows: 45px 45px 110px 42px;
+  row-gap: 20px;
+}
+
+.text1 {
+  grid-row: 1;
+}
+
+.email1 {
+  grid-row: 2;
+}
+
+.textarea1 {
+  grid-row: 3;
+}
+
+.submit1 {
+  grid-row: 4;
+  margin-left: 43%;
+  background: #a73634;
 }
