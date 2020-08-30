@@ -41,6 +41,7 @@ body {
   grid-row: 2;
   margin-left: 185px;
   padding-left: 25px;
+  border-bottom: 3px solid lightgrey;
 }
 
 .triangle:after {
@@ -237,6 +238,16 @@ body {
   background: white;
 }
 
+.grid3::before {
+  content: " ";
+  position: absolute;
+  left: 508px;
+  top: 129px;
+  width: 1000px;
+  height: 5px;
+  background: #b1b1b1;
+}
+
 /* 4 red buttons END */
 
 /* peralta image div START */
@@ -426,6 +437,7 @@ footer:after {
   height: 200px;
   text-align: center;
   font-weight: bold;
+  font-size: 40px;
 }
 
 .tommy {
@@ -435,6 +447,7 @@ footer:after {
   height: 440px;
   text-align: center;
   font-weight: bold;
+  font-size: 40px;
 }
 
 /* 4 pro pictures END */
