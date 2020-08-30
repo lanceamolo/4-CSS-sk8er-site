@@ -3,15 +3,14 @@
 selector {
 background-image: url("assets/"); 
 }
-
 background size matters
 cover
-
 background position 0% 0% ( X , Y )
-
 opacity: visibility between 1 and 0.0
-
 background-repeat: no-repeat;
+
+webpage was based off of zoomed in version(2000x2256) of
+https://raw.githubusercontent.com/lanceamolo/4-CSS-sk8er-site/master/Sk8er-Site.jpg
 
 */
 
@@ -23,15 +22,65 @@ body {
   grid-template-rows: 1fr;
   margin-top: 2px;
   background-image: url("assets/bg.jpg");
+  font-family: verdana, arial, helvetica;
 }
+
+/* read post sign START */
+
+.triangle-container {
+  position: relative;
+  display: grid;
+  grid-template-rows: 45% 55%;
+}
+
+.triangle {
+  width: 230px;
+  height: 90px;
+  background-color: #a73634;
+  position: relative;
+  grid-row: 2;
+  margin-left: 185px;
+  padding-left: 25px;
+}
+
+.triangle:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 100%;
+  height: 0;
+  width: 0;
+  border-width: 45px;
+  border-style: solid;
+  border-color: #a73634;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+}
+
+.triangle .skateboarders {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+  color: #fdfdfd;
+}
+
+/* read post sign END */
+
+/* center container START */
 
 .container {
   display: grid;
   grid-column-start: 2;
   height: 100%;
   gap: 20px 10px;
-  grid-template-rows: 70px 40px 360px 20px 360px 475px 300px 365px;
+  grid-template-rows: 70px 40px 360px 20px 350px 475px 300px 365px;
 }
+
+/* subscribe and 4 social media links START */
 
 .grid1 {
   display: grid;
@@ -43,21 +92,157 @@ body {
 
 .flex1 {
   grid-column-start: 2;
+  display: grid;
+  grid-template-columns: 225px 275px;
 }
+
+.sub {
+  display: grid;
+  grid-column: 1;
+  grid-template-columns: 90% 10%;
+}
+
+.fList {
+  grid-column: 1;
+  color: #fdfdfd;
+  font-size: 13px;
+}
+
+.fList li {
+  position: relative;
+  top: 15px;
+  right: 40px;
+}
+
+.sList {
+  grid-column: 2;
+  font-size: 16px;
+  color: #fdfdfd;
+  line-height: 9px;
+}
+
+.socials1 {
+  grid-column: 2;
+}
+
+/* subscribe and 4 social media links END */
+
+/* 4 red buttons START */
 
 .grid2 {
   display: grid;
   grid-row: 2;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 10px;
 }
 
 .grid2 button {
   background: #a73634;
-  color: white;
+  color: #fdfdfd;
 }
 
+.g2head1::before {
+  content: " ";
+  position: absolute;
+  top: 110px;
+  right: 0;
+  bottom: 0;
+  left: 540px;
+  width: 20px;
+  height: 3px;
+  background: white;
+}
+
+.g2head1:after {
+  content: " ";
+  position: absolute;
+  top: 110px;
+  right: 0;
+  bottom: 0;
+  left: 690px;
+  width: 20px;
+  height: 3px;
+  background: white;
+}
+
+.g2head2::before {
+  content: " ";
+  position: absolute;
+  top: 110px;
+  right: 0;
+  bottom: 0;
+  left: 780px;
+  width: 20px;
+  height: 3px;
+  background: white;
+}
+
+.g2head2:after {
+  content: " ";
+  position: absolute;
+  top: 110px;
+  right: 0;
+  bottom: 0;
+  left: 960px;
+  width: 20px;
+  height: 3px;
+  background: white;
+}
+
+.g2head3::before {
+  content: " ";
+  position: absolute;
+  top: 110px;
+  right: 0;
+  bottom: 0;
+  left: 1040px;
+  width: 20px;
+  height: 3px;
+  background: white;
+}
+
+.g2head3:after {
+  content: " ";
+  position: absolute;
+  top: 110px;
+  right: 0;
+  bottom: 0;
+  left: 1210px;
+  width: 20px;
+  height: 3px;
+  background: white;
+}
+
+.g2head4::before {
+  content: " ";
+  position: absolute;
+  top: 110px;
+  right: 0;
+  bottom: 0;
+  left: 1290px;
+  width: 20px;
+  height: 3px;
+  background: white;
+}
+
+.g2head4:after {
+  content: " ";
+  position: absolute;
+  top: 110px;
+  right: 0;
+  bottom: 0;
+  left: 1460px;
+  width: 20px;
+  height: 3px;
+  background: white;
+}
+
+/* 4 red buttons END */
+
+/* peralta image div START */
+
 .grid3 {
-  border: 10px solid white;
+  border: 10px solid #fdfdfd;
   display: grid;
   grid-row: 3;
   background-image: url("assets/grid.png"), url("assets/top-image.png");
@@ -69,6 +254,19 @@ body {
   top: 55px;
   left: 15px;
 }
+
+.grid4::before {
+  content: " ";
+  position: absolute;
+  top: 507px;
+  width: 1000px;
+  height: 5px;
+  background: #b1b1b1;
+}
+
+/* peralta image div END */
+
+/* 3 radio div START */
 
 .grid4 {
   display: grid;
@@ -90,22 +288,21 @@ body {
   border-radius: 50%;
   margin: 5px;
   align-self: center;
-  border: solid 4px white;
+  border: solid 4px #fdfdfd;
 }
 .dot {
   height: 7px;
   width: 7px;
-  background-color: white;
+  background-color: #fdfdfd;
   border-radius: 50%;
   margin: 5px;
   align-self: center;
-  border: solid 4px white;
+  border: solid 4px #fdfdfd;
 }
 
-input[type="radio"] {
-  height: 16px;
-  width: 16px;
-}
+/* 3 radio div END */
+
+/* 3 interview cards START */
 
 .grid5 {
   grid-row: 5;
@@ -116,23 +313,44 @@ input[type="radio"] {
 
 .card {
   display: grid;
-  background: white;
-  padding: 20px 40px;
+  background: #fdfdfd;
+}
+
+.topline {
+  color: #a73634;
+  font-size: 24px;
+  margin: 0;
+  padding: 35px 25px 0;
 }
 
 .date {
-  margin: 0 auto 0 0;
+  margin: 0;
+  font-size: 12px;
+  color: lightgrey;
+  padding: 0 25px;
 }
 
 .details {
   margin: 0;
+  font-size: 11px;
+  color: #a73634;
+  padding: 0px 25px 15px;
+  line-height: 23px;
+  margin-bottom: -22px;
 }
 
-.grid5 a {
+.readmore {
+  margin: 0;
   text-decoration: none;
   text-align: center;
   color: #a73634;
+  font-weight: bold;
+  font-size: 13px;
 }
+
+/* 3 interview cards END */
+
+/* 4 pro pictures START */
 
 .grid6 {
   display: grid;
@@ -150,7 +368,7 @@ main,
 aside,
 footer {
   min-height: 100%;
-  border: 5px solid white;
+  border: 5px solid #fdfdfd;
 }
 
 header {
@@ -158,6 +376,16 @@ header {
   color: white;
   background-image: url("assets/sk8er-4.png");
   background-position-x: 95%;
+}
+
+header:after {
+  content: " ";
+  position: absolute;
+  top: 1180px;
+  left: 508px;
+  width: 665px;
+  height: 5px;
+  background: #b1b1b1;
 }
 
 main {
@@ -181,12 +409,23 @@ footer {
   background-position: 0% 75%;
 }
 
+footer:after {
+  content: " ";
+  position: absolute;
+  top: 1427px;
+  left: 508px;
+  width: 1000px;
+  height: 5px;
+  background: #b1b1b1;
+}
+
 .names {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 200px;
   text-align: center;
+  font-weight: bold;
 }
 
 .tommy {
@@ -195,24 +434,33 @@ footer {
   align-items: center;
   height: 440px;
   text-align: center;
+  font-weight: bold;
 }
+
+/* 4 pro pictures END */
+
+/* 10 skateboards START */
 
 .grid7 {
   display: grid;
   grid-row: 7;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  background: white;
+  background: #fdfdfd;
 }
 
 .grid7 img {
   place-self: center;
 }
 
+/* 10 skateboards END */
+
+/* contact div START */
+
 .grid8 {
   display: grid;
   grid-row: 8;
   grid-template-columns: 55% 45%;
-  background: white;
+  background: #fdfdfd;
   padding: 30px;
 }
 
@@ -220,6 +468,18 @@ footer {
   grid-column-start: 1;
   grid-column-end: 2;
   margin-right: 30px;
+}
+
+.topP {
+  margin-top: 0;
+  font-size: 24px;
+  color: #a73634;
+}
+
+.bottomP {
+  line-height: 27px;
+  font-size: 14px;
+  color: #a73634;
 }
 
 .contact2 {
@@ -231,18 +491,46 @@ footer {
 
 .text1 {
   grid-row: 1;
+  font-size: 15px;
+  color: #acacac;
+  border-color: #acacac;
+  border-top: 4px solid #acacac;
+  border-left: 4px solid #acacac;
+  text-indent: 8px;
 }
 
 .email1 {
   grid-row: 2;
+  font-size: 15px;
+  color: #acacac;
+  border-color: #acacac;
+  border-top: 4px solid #acacac;
+  border-left: 4px solid #acacac;
+  text-indent: 8px;
 }
 
 .textarea1 {
   grid-row: 3;
+  font-size: 18px;
+  color: #acacac;
+  border-color: #acacac;
+  border-top: 4px solid #acacac;
+  border-left: 4px solid #acacac;
+  text-indent: 8px;
 }
 
 .submit1 {
   grid-row: 4;
   margin-left: 43%;
   background: #a73634;
+  font-size: 17px;
+  color: lightgrey;
+}
+
+/* contact div END */
+
+/* main container END */
+
+.bottomLine {
+  border-bottom: 5px solid rgba(0, 0, 0, 0.3);
 }
