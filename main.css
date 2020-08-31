@@ -78,7 +78,7 @@ body {
   grid-column-start: 2;
   height: 100%;
   gap: 20px 10px;
-  grid-template-rows: 70px 40px 360px 20px 350px 475px 300px 365px;
+  grid-template-rows: 70px 40px 360px 20px 350px 475px 320px 375px;
 }
 
 /* subscribe and 4 social media links START */
@@ -106,7 +106,7 @@ body {
 .fList {
   grid-column: 1;
   color: #fdfdfd;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .fList li {
@@ -124,6 +124,47 @@ body {
 
 .socials1 {
   grid-column: 2;
+  margin-top: 10px;
+  margin-left: 12px;
+}
+
+.socials1 .fa-facebook {
+  background: #475993;
+  color: white;
+  width: 60px;
+  height: 40px;
+  text-size: 50px;
+  text-align: center;
+  padding-top: 20px; solid #475993;
+  border-bottom: 4px solid lightgrey;
+}
+
+.socials1 .fa-rss {
+  background: #c49145;
+  color: white;
+  width: 60px;
+  height: 42px;
+  text-align: center;
+  padding-top: 20px; solid #c49145;
+}
+
+.socials1 .fa-twitter {
+  background: #708dc2;
+  color: lightgrey;
+  width: 60px;
+  height: 42px;
+  text-align: center;
+  padding-top: 20px; solid  #708dc2;
+}
+
+.socials1 .fa-youtube {
+  background: #a54134;
+  color: lightgrey;
+  width: 60px;
+  height: 40px;
+  text-align: center;
+  padding-top: 20px; solid #a54134;
+  border-bottom: 4px solid lightgrey;
 }
 
 /* subscribe and 4 social media links END */
@@ -437,7 +478,7 @@ footer:after {
   height: 200px;
   text-align: center;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 42px;
 }
 
 .tommy {
@@ -447,7 +488,17 @@ footer:after {
   height: 440px;
   text-align: center;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 44px;
+}
+
+.steve {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 160px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 44px;
 }
 
 /* 4 pro pictures END */
@@ -459,6 +510,7 @@ footer:after {
   grid-row: 7;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   background: #fdfdfd;
+  margin-top: 20px;
 }
 
 .grid7 img {
@@ -475,12 +527,52 @@ footer:after {
   grid-template-columns: 55% 45%;
   background: #fdfdfd;
   padding: 30px;
+  margin-top: 10px;
 }
 
 .contact1 {
   grid-column-start: 1;
   grid-column-end: 2;
   margin-right: 30px;
+}
+
+.socials2 {
+}
+
+.socials2 .fa-facebook {
+  background: #686868;
+  color: white;
+  width: 30px;
+  height: 21px;
+  text-align: center;
+  border-top: 6px solid #686868;
+}
+
+.socials2 .fa-rss {
+  background: lightgrey;
+  color: white;
+  width: 30px;
+  height: 21px;
+  text-align: center;
+  border-top: 6px solid lightgrey;
+}
+
+.socials2 .fa-twitter {
+  background: grey;
+  color: white;
+  width: 30px;
+  height: 21px;
+  text-align: center;
+  border-top: 6px solid grey;
+}
+
+.socials2 .fa-youtube {
+  background: grey;
+  color: white;
+  width: 30px;
+  height: 21px;
+  text-align: center;
+  border-top: 6px solid grey;
 }
 
 .topP {
